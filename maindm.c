@@ -92,7 +92,7 @@ int main(int argc, char *argv[]) {
   
 	int opcao;
 	
-	while(opcao != 3){
+	while(opcao != 3){ //Para o menu finalizar so com a escola do 3(sair)
 	
 		printf("\n\t__________________________________________________________\n");
 	    printf("\t__________________________________________________________\n");
@@ -107,6 +107,7 @@ int main(int argc, char *argv[]) {
 	    printf("\t\t\t\t1. Jogar \n\t\t\t\t2. Ajuda \n\t\t\t\t3. Sair\n\n");
 	    printf("\t\t\t   Escolha uma opcao: ");
 	    scanf("%d", &opcao);
+	
 	    system("cls");
 	    
 	    switch(opcao){
@@ -118,13 +119,13 @@ int main(int argc, char *argv[]) {
 	    		system("cls");
 	    		
 	    		while(rslt == 0){
-	    			v = vez % 2;
+	    			v = vez % 2; //Para definir o turno
 	    			if(v == 0){
 	    				printf("\n\t\t\tVEZ DAS PECAS BRANCAS");
 	    			}else if(v == 1){
 	    				printf("\n\t\t\tVEZ DAS PECAS PRETAS");
 					}
-	    			printf("\n\n\t\t\t  1 2 3 4 5 6 7 8\n");
+	    			printf("\n\n\t\t\t  1 2 3 4 5 6 7 8\n"); //Impressao do tabuleiro
 	    			for(i = 0; i < 8; i++){
 	    				printf("\t\t\t%d ", i + 1);
 	    				for(j = 0; j < 8; j++){
